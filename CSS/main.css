@@ -879,7 +879,7 @@ footer img{
         padding-left: 15px;
     }
     .text-view button{
-        padding: 10px 20px;
+        padding: 10px 25px 10px 25px;
         border: 2.5px solid rgb(245, 167, 21);
         border-radius: 2px;
         font-weight: 600;
@@ -892,7 +892,7 @@ footer img{
     }
 
     .text-view a{
-       padding: 30px;
+       padding: 0px;
     }
 
     .container{
