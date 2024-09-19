@@ -1,0 +1,857 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(20, 22, 24);
+    font-family: 'Montserrat';  
+}
+::selection{
+    background-color: rgb(255, 194, 51);
+    color: gray;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: static;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 0px 8px 1px rgba(0,0,0,0.3);
+}
+
+.h2wheel img{
+    width: 120px;
+    margin-left: 80px;
+}
+
+.h2wheel{
+    text-decoration: none;
+    color:rgb(255, 194, 51) ;
+    margin-right: auto;
+    margin-left: 2%;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 80px;
+    list-style: none;
+}
+
+.navbar .icon{
+    display: none;
+}
+
+.normalmain,.normalpromo,.normalall, .khusus{
+    margin-right: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease;
+    padding: 35px 20px;
+}
+
+.normalabout{
+    margin-right: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(245, 167, 21);
+    transition: all 0.2s ease;
+    padding: 35px 20px;
+}
+
+.normalpromo:hover,.normalall:hover,.normalmain:hover, .khusus:hover{
+    color: rgb(245, 193, 74);
+    border-bottom: 3px solid rgb(255, 193, 74);
+}
+
+section{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+.head-sec{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.head-sec h1{
+    font-size: 50px;
+    color: rgb(245, 167, 21);
+    margin-bottom: 30px;
+}
+.head-sec h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.head-sec p{
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 1.7;
+}
+.right-sec{
+width: 900px;
+}
+.head-sec span{
+    color: rgb(245, 167, 21);
+    font-size: 1000;
+}
+
+.banner{
+    background-image: url(../about_us/people_discussing.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: opacity(0.5);
+}
+
+.bcground-white{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: black;
+}
+
+.sec-text{
+    text-align: center;
+    width: 1000px;
+    margin-bottom: 150px;
+}
+.sec-text h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 50px;
+}
+.sec-text p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: black;
+}
+
+.bcground-white img{
+    width: 550px;
+}
+.bcground-white p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.visi{
+    display: flex;
+    gap: 130px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.misi{
+    display: flex;
+    gap: 150px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.visi-misi-text{
+    padding-top: 10px;
+    width: 500px;
+}
+.visi-misi-text h1{
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+.visi img{
+    box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.192);
+}
+.misi img{
+    box-shadow: -20px -20px 0px rgba(0, 0, 0, 0.192);
+}
+.activity{
+    margin-top: 110px;
+    font-size: 55px;
+    color: black;
+}
+.container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-height: 60vh;
+    width: 100%;
+    padding-bottom: 50px;
+    padding: 0 35px;
+}
+.wrap{
+    max-width: 1300px;
+    position: relative;
+}
+.wrap i{
+    background-color: rgb(0, 0, 0);
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    line-height: 46px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    transition: 0.2s ease;
+}
+.wrap i:hover{
+    color: rgb(245, 167, 21);
+}
+
+.wrap i:first-child{
+    left: -23px;
+    /* display: none; */
+}
+.wrap i:last-child{
+    right: -23px;
+}
+.wrap .carousel{
+    cursor: pointer;
+    font-size: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img{
+    pointer-events: none;
+}
+.carousel img{
+    height: 400px;
+    width: calc(100%/3);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:first-child{
+    margin-left: 0;
+}
+
+footer{
+    background-color: white;
+    bottom: 0;
+}
+
+footer img{
+    max-width: 200px;
+    padding-right: 50px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 100px 50px; 
+    gap: 120px;
+    bottom: 0;
+}
+
+.footer h3, h4{
+    font-weight: 600;
+}
+
+.footer-1{
+    text-align: center;
+    padding: 25px 0px;
+    color: rgb(255, 194, 51);
+    background-color: rgb(40, 40, 40);
+}
+
+@media screen and (max-width: 900px) {
+    .carousel img{
+        width: calc(100% /2);
+    }
+}
+@media screen and (max-width: 500px) {
+    .carousel img{
+        width: calc(100%);
+    }
+}
+
+
+@media screen and (max-width: 1040px) {    
+    header{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: static;
+        padding: 5px;
+        /* gap: 20px; */
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 0px 8px 1px rgba(0,0,0,0.3);
+    }
+    
+    .h2wheel img{
+        width: 120px;
+        margin-left: 40px;
+    }
+    
+    .h2wheel{
+        font-family: sans-serif;
+        text-decoration: none;
+        color:rgb(255, 194, 51) ;
+        margin-right: auto;
+        margin-left: 2%;
+    }
+    
+    .navbar{
+        margin-right: 50px;
+    }
+    
+    .normalmain,.normalpromo,.normalall, .khusus{
+        margin-right: 20px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        transition: all 0.4s ease 0.1s;
+        padding: 35px 20px;
+        /* letter-spacing: 1px; */
+    }
+    
+    section{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+    }
+    
+    .head-sec{
+        display: flex;
+        align-items: center;
+        gap: 150px;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .head-sec h1{
+        font-size: 35px;
+        color: rgb(245, 167, 21);
+        margin-bottom: 30px;
+    }
+    .head-sec h3{
+        font-size: 15px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+    }
+    .head-sec p{
+        text-align: justify;
+        letter-spacing: 2px;
+        line-height: 1.7;
+        font-size: 13px;
+    }
+    .right-sec{
+    width: 600px;
+    }
+    
+    .banner{
+        background-image: url(../about_us/people_discussing.jpeg);
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: opacity(0.5);
+    }
+    
+    .bcground-white{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        color: black;
+    }
+    
+    .sec-text{
+        text-align: center;
+        width: 850px;
+        margin-bottom: 150px;
+    }
+    .sec-text h1{
+        font-size: 35px;
+        color: black;
+        margin-bottom: 50px;
+    }
+
+    .bcground-white img{
+        width: 550px;
+    }
+    .bcground-white p{
+        font-size: 15px;
+        color: black;
+        margin-bottom: 20px;
+    }
+    .visi img{
+        width: 400px;
+    }
+    .misi img{
+        width: 400px;
+    }
+    .visi{
+        display: flex;
+        gap: 130px;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .misi{
+        display: flex;
+        gap: 130px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .visi-misi-text{
+        padding-top: 10px;
+        width: 350px;
+    }
+    .visi-misi-text h1{
+        margin-bottom: 15px;
+        font-size: 35px;
+    }
+    .visi img{
+        box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.192);
+    }
+    .misi img{
+        box-shadow: -20px -20px 0px rgba(0, 0, 0, 0.192);
+    }
+
+    .activity{
+        margin-top: 110px;
+        font-size: 35px;
+        color: black;
+    }
+
+    .carousel img{
+        width: calc(100% /2);
+    }
+
+    .footer img{
+        padding-right: 0;
+    }
+
+  }
+
+@media screen and (max-width: 700px) {
+    /* For tablet: */
+    
+    .h2wheel img {
+        width: 100px;
+        margin-left: 15px;
+    }
+    .normalpromo:hover,.normalall:hover,.normalmain:hover, .khusus:hover{
+        color: rgb(245, 193, 74);
+        border: none;
+    }
+
+    .h2wheel {
+        text-decoration: none;
+        color: rgb(255, 194, 51);
+        margin-right: auto;
+        margin-left: 2%;
+    }
+
+    .navbar li {
+        display: none;
+    }
+
+    .navbar a.icon {
+        display: block;
+        text-decoration: none;
+        color: #000;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+
+    .h2wheel.active {
+        display: none;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+
+    .navbar.active {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.active li {
+        display: block;
+        text-align: left;
+        margin-top: 25px;
+        margin-bottom: 15px;
+
+    }
+
+    .navbar.active .icon {
+        position: absolute;
+        right: -25px;
+        top: 15px;
+    }
+
+    section{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+    }
+    
+    .head-sec{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    .head-sec h1{
+        font-size: 30px;
+        color: rgb(245, 167, 21);
+        margin-bottom: 30px;
+    }
+    .head-sec h3{
+        font-size: 13px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+    }
+    .head-sec p{
+        text-align: justify;
+        letter-spacing: 2px;
+        line-height: 1.7;
+        font-size: 11px;
+    }
+    .right-sec{
+    width: 400px;
+    }
+    
+    .banner{
+        background-image: url(../about_us/people_discussing.jpeg);
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: opacity(0.5);
+    }
+    
+    .bcground-white{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        padding-bottom: 50px;
+        color: black;
+    }
+    
+    .sec-text{
+        text-align: center;
+        width: 600px;
+        margin-bottom: 150px;
+    }
+    .sec-text h1{
+        font-size: 30px;
+        color: black;
+        margin-bottom: 50px;
+    }
+
+    .bcground-white p{
+        font-size: 13px;
+        color: black;
+        margin-bottom: 20px;
+    }
+    .bcground-white img{
+        width: 300px;
+    }
+    .visi{
+        display: flex;
+        gap: 60px;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .misi{
+        display: flex;
+        gap: 60px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .visi-misi-text{
+        padding-top: 0px;
+        width: 250px;
+    }
+    .visi-misi-text h1{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .visi-misi-text p{
+        font-size: 11px;
+        margin-bottom: 7px;
+    }
+    .visi img{
+        box-shadow: 17px 17px 0px rgba(0, 0, 0, 0.192);
+    }
+    .misi img{
+        box-shadow: -17px -17px 0px rgba(0, 0, 0, 0.192);
+    }
+
+    .activity{
+        margin-top: 110px;
+        font-size: 30px;
+        color: black;
+    }
+
+    .carousel img{
+        width: calc(100% /2);
+    }
+    footer img{
+        display: none;
+    }
+    
+    .footer{
+        display: block;
+        padding: 54px 36px;
+        width: 80%;
+    }
+    
+    .whcalifornia, .whnewyork{
+        padding-top: 36px;
+    }
+
+    .footer h3, h4{
+        font-weight: 600;
+    }
+
+    .footer p{
+        font-size: 15px;
+    }
+    .footer-1{
+        text-align: center;
+        padding: 25px 0px;
+        color: rgb(255, 194, 51);
+        background-color: rgb(40, 40, 40);
+    }
+
+
+
+  }
+
+@media screen and (max-width: 400px) {
+    /* For mobile phone: */
+       
+   
+    .normalpromo:hover,.normalall:hover,.normalmain:hover, .khusus:hover{
+        color: rgb(245, 193, 74);
+        border: none;
+    }
+
+    .h2wheel img {
+        width: 100px;
+        margin-left: 15px;
+    }
+
+    .h2wheel {
+        text-decoration: none;
+        color: rgb(255, 194, 51);
+        margin-right: auto;
+        margin-left: 2%;
+    }
+
+    .navbar li {
+        display: none;
+    }
+
+    .navbar a.icon {
+        display: block;
+        text-decoration: none;
+        color: #000;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+
+    .h2wheel.active {
+        display: none;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+
+    .navbar.active {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.active li {
+        display: block;
+        text-align: left;
+        margin-top: 25px;
+        margin-bottom: 15px;
+
+    }
+
+    .navbar.active .icon {
+        position: absolute;
+        right: -25px;
+        top: 15px;
+    }
+    section{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+    }
+    
+    .head-sec{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .head-sec h1{
+        font-size: 17px;
+        color: rgb(245, 167, 21);
+        margin-bottom: 10px;
+    }
+    .head-sec h3{
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+    }
+    .head-sec p{
+        text-align: justify;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        font-size: 10px;
+    }
+    .right-sec{
+    width: 210px;
+    }
+    
+    .banner{
+        background-image: url(../about_us/people_discussing.jpeg);
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: opacity(0.5);
+    }
+    
+    .bcground-white{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 35px;
+        padding-bottom: 10px;
+        color: black;
+    }
+    
+    .sec-text{
+        text-align: center;
+        width: 350px;
+        margin-bottom: 30px;
+    }
+    .sec-text h1{
+        font-size: 17px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .bcground-white p{
+        font-size: 13px;
+        color: black;
+        margin-bottom: 10px;
+    }
+    .bcground-white img{
+        width: 180px;
+    }
+    .visi{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+        
+    }
+    .misi{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .visi-misi-text{
+        padding-top: 0px;
+        width: 150px;
+    }
+    .visi-misi-text h1{
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    .visi-misi-text p{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .visi img{
+        box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.192);
+    }
+    .misi img{
+        box-shadow: -10px -10px 0px rgba(0, 0, 0, 0.192);
+    }
+
+    .activity{
+        margin-top: 60px;
+        font-size: 30px;
+        color: black;
+    }
+
+    .carousel img{
+        width: calc(100% /2);
+    }
+    .footer{
+        display: block;
+        padding: 54px 0 54px 36px;
+        width: 80%;
+    }
+  }
+

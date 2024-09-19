@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Cars</title>
+    <link rel="stylesheet" href="../CSS/allcars.css">
+    <link rel="icon" type="image/x-icon" href="../logo-tampilan.jpg">
+    <script src="../JS/allcars.js"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="../index.html" class="h2wheel" id="h2wheel"><img src="../wheelhub final logo.jpg" alt=""></a>
+            <ul class="navbar" id="navbar">
+                <li><a class="normalmain" href="../main.html">HOME</a></li>
+                <li><a class="normalpromo" href="promotion.html">PROMOTION</a></li>
+                <li><a class="normalall" href="allcars.html">ALL CARS</a></li>
+                <li><a class="normalabout" href="aboutus.html">ABOUT US</a></li>
+                <li><a class="khusus" href="register.html">REGISTER</a></li>
+                <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="mobileNav()">&#9776;</a>
+            </ul>
+    </header>
+
+    <section class="category">
+        <div class="navbarcar">
+            <a class="navcars" href="#" data-target="cars">Cars & Minivan</a>
+            <a class="navsuv" href="#" data-target="suv">Crossovers & SUVs</a>
+            <a class="navev" href="#" data-target="ev">Electrified</a>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg" class="modal-content">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <section class="cars" id="cars">
+        <div class="cars-all">
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../product_card/2023_Mirai.jpeg" alt="Mobil" class="img" data-caption="Toyota Mirai 2023" onclick="openModal('/product_card/2023_Mirai.jpeg', '2023 Mirai')">
+                </div>
+                <div class="card-descript">
+                    <h3>2023 Mirai</h3>
+                    <p>Starting at $49,500</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../promotion_banner/2024_corola_hatchback.jpeg" alt="" class="img" data-caption="Toyota Corolla Hatchback 2024" onclick="openModal('/promotion_banner/2024_corola_hatchback.jpeg', '2024 Corola Hatchback')">
+                </div>
+                <div class="card-descript">
+                    <h3>2024 Corolla Hatchback</h3>
+                    <p>Starting at $23,505</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="/product_card/2024_GR_Corolla.jpeg" alt="" class="img" data-caption="Toyota GR Corolla 2024" onclick="openModal('/product_card/2024_GR_Corolla.jpeg', '2024 GR Corolla')">
+                </div>
+                <div class="card-descript">
+                    <h3>2024 GR Corolla</h3>
+                    <p>Starting at $36,500</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../promotion_banner/2024_corola_hybrid.jpeg" alt="" class="img" data-caption="Toyota Corolla Hybrid 2024" onclick="openModal('/promotion_banner/2024_corola_hybrid.jpeg', '2024 Corrola Hybrid')">
+            </div>
+                <div class="descript">
+                    <h3>2024 Corrolla Hybrid</h3>
+                    <p>Starting at <span class="price1">$21,050</span> <span class="outer"><span class="price2">$21,388</span></span> <span class="percent"><sub>3%</sub></span></p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../promotion_banner/2024_sienna.jpeg" alt="" class="img" data-caption="Toyota Sienna 2024" onclick="openModal('/promotion_banner/2024_sienna.jpeg', '2024 Sienna')">
+            </div>
+                <div class="descript">
+                    <h3>2024 Sienna</h3>
+                    <p>Starting at $37,685</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../product_card/2024_prius_prime.jpeg" alt="" class="img" data-caption="Toyota Prius Prime 2024" onclick="openModal('/product_card/2024_prius_prime.jpeg', '2024 Prius Prime')">
+                </div>
+                <div class="descript">
+                    <h3>2024 Prius Prime</h3>
+                    <p>Starting at $32,975</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../product_card/2025_Camry.jpeg" alt="" class="img" data-caption="Toyota Camry 2025" onclick="openModal('/product_card/2025_Camry.jpeg', '2025 Camry')">
+                </div>
+                <div class="card-descript">
+                    <h3>2025 Camry</h3>
+                    <p>Starting at $26,420</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="suv" id="suv">
+        <div class="cars-all">
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../product_card/2024_grand_highlander.jpeg" alt="" class="img" data-caption="Toyota Grand Highlander 2024" onclick="openModal('/product_card/2024_grand_highlander.jpeg', '2024 Grand Highlander')">
+                </div>
+                <div class="descript">
+                    <h3>2024 Grand Highlander</h3>
+                    <p>Starting at $43,320</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../promotion_banner/2024_highlander_hybrid.jpeg" alt="" class="img" data-caption="Toyota Highlander Hybrid 2024" onclick="openModal('/promotion_banner/2024_highlander_hybrid.jpeg', '2024 Highlander Hybrid')">
+                </div>
+                <div class="descript">
+                    <h3>2024 Highlander Hybrid</h3>
+                    <p>Starting at <span class="price1">$38,921</span> <span class="outer"><span class="price2">$40,970</span></span> <span class="percent"><sub>5%</sub></span></p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../product_card/2024_land_cruiser.jpeg" alt="" class="img" data-caption="Toyota Land Cruiser 2024" onclick="openModal('/product_card/2024_land_cruiser.jpeg', '2024 Land Cruiser')">
+                </div>
+                <div class="descript">
+                    <h3>2024 Land Cruiser</h3>
+                    <p>Starting at $55,950</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../product_card/2024_RAV4.png" alt="" class="img" data-caption="Toyota RAV4 2024" onclick="openModal('/product_card/2024_RAV4.png', '2024 RAV4')">
+                </div>
+                <div class="descript">
+                    <h3>2024 RAV4</h3>
+                    <p>Starting at $28,675</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../product_card/2024_venza.jpeg" alt="" class="img" data-caption="Toyota Venza 2024" onclick="openModal('/product_card/2024_venza.jpeg', '2024 Venza')">
+                </div>
+                <div class="descript">
+                    <h3>2024 Venza</h3>
+                    <p>Starting at $35,070</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="ev" id="ev">
+        <div class="cars-all">
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../product_card/2024_bz4x.png" alt="" class="img" data-caption="Toyota bZ4X EV 2024" onclick="openModal('/product_card/2024_bz4x.png', '2024 bZ4X EV')">
+                </div>
+                <div class="descript">
+                    <h3>2024 bZ4X EV</h3>
+                    <p>Starting at $43,070</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../promotion_banner/2024_corola_hybrid.jpeg" alt="" class="img" data-caption="Toyota Corolla Hybrid 2024" onclick="openModal('/promotion_banner/2024_corola_hybrid.jpeg', '2024 Corrola Hybrid')">
+                </div>
+                <div class="descript">
+                    <h3>2024 Corrolla Hybrid</h3>
+                    <p>Starting at <span class="price1">$21,050</span> <span class="outer"><span class="price2">$21,388</span></span> <span class="percent"><sub>3%</sub></span></p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../promotion_banner/2024_highlander_hybrid.jpeg" alt="" class="img" data-caption="Toyota Highlander Hybrid 2024" onclick="openModal('/promotion_banner/2024_highlander_hybrid.jpeg', '2024 Highlander Hybrid')">
+                </div>
+                <div class="descript">
+                    <h3>2024 Highlander Hybrid</h3>
+                    <p>Starting at <span class="price1">$38,921</span> <span class="outer"><span class="price2">$40,970</span></span> <span class="percent"><sub>5%</sub></span></p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../promotion_banner/2024_sienna.jpeg" alt="" class="img" data-caption="Toyota Sienna 2024" onclick="openModal('/promotion_banner/2024_sienna.jpeg', '2024 Sienna')">
+                </div>
+                <div class="descript">
+                    <h3>2024 Sienna</h3>
+                    <p>Starting at $37,685</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../product_card/2024_prius_prime.jpeg" alt="" class="img" data-caption="Toyota Prius Prime 2024" onclick="openModal('/product_card/2024_prius_prime.jpeg', '2024 Prius Prime')">
+                </div>
+                <div class="descript">
+                    <h3>2024 Prius Prime</h3>
+                    <p>Starting at $32,975</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../product_card/2024_venza.jpeg" alt="" class="img" data-caption="Toyota Venza 2024" onclick="openModal('/product_card/2024_venza.jpeg', '2024 Venza')">
+                </div>
+                <div class="descript">
+                    <h3>2024 Venza</h3>
+                    <p>Starting at $35,070</p>
+                </div>
+            </div>
+
+            <div class="card-car">
+                <div class="imgcon">
+                    <img src="../product_card/2025_Camry.jpeg" alt="" class="img" data-caption="Toyota Camry 2025" onclick="openModal('/product_card/2025_Camry.jpeg', '2025 Camry')">
+                </div>
+                <div class="card-descript">
+                    <h3>2025 Camry</h3>
+                    <p>Starting at $26,420</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <img src="../Assets/wheelhub final logo.jpg" alt="">
+           <div class="whlasvegas">
+             <h3>WHEEL HUB LASVEGAS</h3>
+             <br>
+             <p>Jl. Sultan Iskandar Muda No.27 <br>Kebayoran Lama, Jakarta Selatan <br>Indonesia </p>
+             <br>
+             <h4>OPENING HOURS</h4>
+             <br>
+             <p>Mon - Sat   : 09.00 - 17.00 GMT</p>
+             <br>
+             <h4>CONTACT</h4>
+             <br>
+             <p>Tel 1   : (+62 21) 721 687 1 <br>Tel 2   : (+62 21) 270 929 23</p>
+           </div>
+    
+           <div class="whcalifornia">
+            <h3>WHEEL HUB CALIFORNIA</h3>
+             <br>
+             <p>Jl. Cihampelas No.81, RT.004/RW.008 <br>Tamansari, Kec. Bandung Wetan <br>Kota Bandung, Jawa Barat <br>Indonesia</p>
+             <br>
+             <h4>OPENING HOURS</h4>
+             <br>
+             <p>Mon - Sat   : 09.00 - 17.00 GMT</p>
+             <br>
+             <h4>CONTACT</h4>
+             <br>
+             <p>Tel 1   : (+62 21) 721 687 1</p>
+           </div>
+    
+           <div class="whnewyork">
+            <h3>WHEEL HUB NEWYORK</h3>
+             <br>
+             <p>Jl. Thamrin Boulevard Pantai Indah Kapuk 2 <br>(PIK 2) Kavling 22, 23, RW.25, Sedayu, Indo City,<br>Kab. Tangerang, Banten, Indonesia.</p>
+             <br>
+             <h4>OPENING HOURS</h4>
+             <br>
+             <p>Mon - Sat   : 09.00 - 17.00 GMT</p>
+             <br>
+             <h4>CONTACT</h4>
+             <br>
+             <p>Tel 1   : (+62 21) 721 687 1 <br>Tel 2   : (+62 21) 270 929 23</p>
+           </div>
+        </div>
+           <div class="footer-1">
+            <p>© 2024 Wheel Hub All rights reserved</p>
+           </div>
+        </footer>
+</body>
+</html>

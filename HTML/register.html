@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel Hub Register</title>
+    <link rel="stylesheet" href="../CSS/register.css">
+    <script defer src="../JS/register.js"></script>
+    <link rel="icon" type="image/x-icon" href="../logo-tampilan.jpg">
+
+</head>
+<body>
+    <header id="header">
+        <a href="../index.html" class="h2wheel" id="h2wheel"><img src="../wheelhub final logo.jpg" alt=""></a>
+            <ul class="navbar" id="navbar">
+                <li><a class="normalmain" href="../index.html">HOME</a></li>
+                <li><a class="normalpromo" href="promotion.html">PROMOTION</a></li>
+                <li><a class="normalall" href="allcars.html">ALL CARS</a></li>
+                <li><a class="normalabout" href="aboutus.html">ABOUT US</a></li>
+                <li><a class="khusus" href="register.html">REGISTER</a></li>
+                <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="mobileNav()">&#9776;</a>
+            </ul>
+    </header>
+    <section>
+        <h1>REGISTER</h1>
+        <form id="form" method="post">
+            <div class="txtfield">
+                <input type="text" id="username">
+                <label id="labelu">Username<span style="font-size: small; font-weight: lighter; color: gray;"> (min. 5 words)</span>
+                    <span style="color: rgb(177, 42, 42); font-weight: 600;" class="erroruser" id="erroruser"></span></label> 
+            </div>
+
+            <div class="txtfield">
+                <input type="email" id="email" >
+                <label id="labele">Email<span style="color: rgb(177, 42, 42); font-weight: 600;" class="erroremail" id="erroremail"></span></label>
+            </div>
+        <div class="genderdob">
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <span class ="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for = "dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                </div>
+            </div>
+            <div class="dob-details">
+                <span id="labeld" class="dob-title">Date of Birth</span>
+                <span style="color: rgb(177, 42, 42); font-weight: 600;" id="errordate"></span>
+                <input type="date" id="date" >
+            </div>
+        </div>
+            <div class="txtfield">
+                <input type="password" id="password">
+                <label id="labelp">Password<span style="font-size: small; font-weight: lighter; color: gray;"> (min. 8 words)</span>
+                    <span style="color: rgb(177, 42, 42); font-weight: 600;" class="errorpass" id="errorpass"></span></label>
+            </div>
+                <div class="txtfield">
+                    <input type="password" id="confirmpass" >
+                    <label id="labelc">Confirm Password<span style="color: rgb(177, 42, 42); font-weight: 600;" class="errorcon" id="errorcon"></span></label>
+                </div>
+                <div class="checktc">
+                    <input type="checkbox" id="checkbox" >
+                    <label>By clicking <span style="font-weight: 600;">Register</span>, you agree to our <span id="terms">Terms and Conditions</span>.</label>
+                    <span style="color: rgb(177, 42, 42); font-weight: 600;" id="errorbox" class="errorbox"></span>
+                </div>
+
+                <div class="pop-up" id="pop-up">
+                    <div class="pop-up-text">
+                        <p id="closeBtn">&times;</p>
+                        <h1>TERMS & CONDITIONS</h1>
+                        <p>These terms and conditions outline the rules and regulations for the use of WheelHub, located at WheelHub.com.</p>
+                        <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use WheeHub if you do not agree to take all of the terms and conditions stated on this page.</p>
+                    </div>
+                </div>
+                
+               <input type="submit" value="Register">
+
+                <div class="login-form">
+                    <p>Already have an account? <a href="login.html">Login</a>.</p>
+                </div>
+        </form>
+    </section>
+</body>
+</html>
